@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-image: url(/images/17454.jpg);
+    background-position: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    background: #0077B6;
+    width: 370px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.heading header {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+}
+
+form button {
+  background-color: #0096C7 ;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+form button:focus {
+    border: 3px solid white;
+}
+
+form input {
+    height: 45px;
+    font-size: 17px;
+    border-radius: 12px;
+}
+
+form input:focus{
+    border: 5px solid #0096C7;
+}
+
+form p {
+    font-size: 18px;
+    padding-top: 30px;
+}
+ 
+form img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    
+}
+
+form .country-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form select {
+    border: 2px solid white;
+    
+}
+
+form .exchange-rate{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+
+
