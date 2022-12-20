@@ -217,7 +217,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
     }
   
     // Authentication
-    if (username === "Keittah" && password === "password") {
+    if (username === "Newuser" && password === "pass") {
       // If the credentials are valid, redirect the user to the appropriate page
       alert("Valid username or password.")
     } else {

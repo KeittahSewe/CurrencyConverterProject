@@ -23,6 +23,9 @@ The program contains a dummy signup form and login form that accepts dummy data.
 To convert currencies, the user should go to the drop down lists provided and choose the countries they wish to convert currencies from.
 Then add the amount they wish to convert and click the "Get Exchange Rate" button.
 
+## Authentication Test
+Also to test the login form the user can enter the username:Newuser and the password:pass
+
 ## Author
 Keittah Sewe
 
