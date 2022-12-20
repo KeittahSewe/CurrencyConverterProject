@@ -6,7 +6,6 @@ For many areas, it is difficult to obtain exchange rates for currencies before g
 They require an apllication that can display up to date exchange rates.
 
 Solution
-
 Creating an application where individuals can acquire exchange rates and convert currencies.
 
 MVP
