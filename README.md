@@ -1,19 +1,27 @@
-# NAME OF APPLICATION
-=======================
-**<application_name>** <project description>
-## REQUIREMENTS
-### Prerequisites
-* node v14.17.4 and above
-```
-Meta
-----
-Author:
-   * **Keittah Sewe** - *Initial work* - [mutuajoseph](<github url link>)
-Status:
-    maintained, and is currently in development
-Version:
-    v0.1.0
+# CURRENCY CONVERTER
 
------
+## Description
+This an application that allows the user to convert different currencies from one to another and check out currency exchange rates
+
+## MVP
+Some features of this program's include:
+1. Displaying exchange rates.
+2. Converting currencies.
+
+## Project Requirements
+1. HTML
+2. CSS
+3. JavaScript
+4. API - ExchangeRate-API
+
+## Deployment
+```bash
+https://keittahsewe.github.io/CurrencyConverterProject/
+```
+
+## Author
+Keittah Sewe
+
+
 ## License
-This project is licensed under the MIT License
+MIT License
