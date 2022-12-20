@@ -12,7 +12,7 @@ Some features of this program's include:
 1. HTML
 2. CSS
 3. JavaScript
-4. API - ExchangeRate-API
+4. API - https://app.exchangerate-api.com
 
 ## Deployment
 ```bash
