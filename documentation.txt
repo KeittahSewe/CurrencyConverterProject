@@ -1,0 +1,23 @@
+Project Owner: Keittah Sewe
+Project Name: Currency Converter
+
+Problem Statement
+For many areas, it is difficult to obtain exchange rates for currencies before going to a "bureau de change" to change their money.
+They require an apllication that can display up to date exchange rates.
+
+Solution
+
+Creating an online application that allows users to track their expenses at the comfort of their homes or wherever they are.
+
+MVP
+1. Displaying exchange rates.
+2. Converting currencies.
+
+API URL
+https://app.exchangerate-api.com
+
+GitHub Link
+https://github.com/KeittahSewe/CurrencyConverterProject
+
+Deployment link
+https://keittahsewe.github.io/CurrencyConverterProject/
