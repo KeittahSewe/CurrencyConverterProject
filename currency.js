@@ -159,8 +159,13 @@ let country_code = {
     "ZMK" : "ZM",
     "ZWD" : "ZW"
 }
-const countryList = document.querySelectorAll(".country-list select");
- 
+const countryList = document.querySelectorAll(".country-list select"),
+fromCurrency = document.querySelector(".from select"),
+toCurrency = document.querySelector(".to select"),
+
+exchangeButton = document.querySelector("form button");
+
+
 for (let i = 0; i < countryList.length; i++) {
     for (currency_code in country_code) {
         //insert options tag into select tag
@@ -169,3 +174,59 @@ for (let i = 0; i < countryList.length; i++) {
     }
     
 }
+
+exchangeButton.addEventListener("click", e =>{
+    e.preventDefault(); // prevents submission
+    getExchangeRate();
+});
+
+function getExchangeRate(){
+    const amount = document.querySelector(".amount input");
+    let amountValue = amount.value;
+    
+
+    let url = `https://v6.exchangerate-api.com/v6/a17a7a74a4523412c3c4b0bf/latest/${fromCurrency.value}`;
+    //fetching api response
+    fetch(url).then(response => response.json()).then(result => {
+        let exchangeRate = result.conversion_rates[toCurrency.value];
+        let totalExchangeRate = (amountValue * exchangeRate).toFixed(3);
+        const exchangeRateText = document.querySelector(".exchange-rate");
+        exchangeRateText.innerText = `${amountValue} ${fromCurrency.value} = ${totalExchangeRate} ${toCurrency.value}`
+    })
+}
+
+function toggleSignUpForm() {
+  var form = document.getElementById("signUpForm");
+  if (form.style.display === "block") {
+    form.style.display = "none";
+  } else {
+    form.style.display = "block";
+  }
+}
+
+document.getElementById("loginForm").addEventListener("submit", function(event){
+    event.preventDefault();
+  
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+  
+    // Validation
+    if (!username || !password) {
+      alert("Please enter a username and password.");
+      return;
+    }
+  
+    // Authentication
+    if (username === "Keittah" && password === "password") {
+      // If the credentials are valid, redirect the user to the appropriate page
+      alert("Valid username or password.")
+    } else {
+      // If the credentials are invalid, display an error message
+      alert("Invalid username or password.");
+    }
+    this.submit();
+  });
+
+  
+  
+

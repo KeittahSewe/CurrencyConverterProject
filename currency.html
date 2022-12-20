@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter Program</title>
     <link rel="stylesheet" href="./currency.css">
-
+    
 </head>
 <body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <button onclick="toggleSignUpForm()">Sign Up</button>
+      </nav>      
+      <form id="signUpForm">
+        <label for="username">Username:</label><br>
+        <input type="username1" id="username1" name="username1"><br>
+        <label for="password1">Password:</label><br>
+        <input type="password1" id="password1" name="password1"><br>
+        <label for="passwordConfirm">Confirm Password:</label><br>
+        <input type="password" id="passwordConfirm" name="passwordConfirm"><br>
+        <input type="submit" value="Sign Up">
+      </form>
+      
+    <form id="loginForm" >
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <br>
+  <input type="submit" value="Submit">
+</form>
     <div class="heading">
         <header>Currency Converter</header>
         <form action="#">
@@ -31,10 +56,12 @@
                     </div>
                 </div>
             </div>
-            <div class="exchange-rate">1 USD = 118.16 NPR</div>
+            <div class="exchange-rate">Calculating...</div>
                 <button>Get Exchange Rate</button>
         </form>
     </div>
+
+
     <script src="./currency.js"></script>
     
 </body>
