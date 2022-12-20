@@ -7,7 +7,7 @@ They require an apllication that can display up to date exchange rates.
 
 Solution
 
-Creating an online application that allows users to track their expenses at the comfort of their homes or wherever they are.
+Creating an application where individuals can acquire exchange rates and convert currencies.
 
 MVP
 1. Displaying exchange rates.
